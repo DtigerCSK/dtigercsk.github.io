@@ -1,0 +1,16 @@
+small {
+	color: #bdc3c7;
+}
+
+/*Image Radio Buttons*/
+.picker > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+.picker > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid #D1D1D1;
+}
+.picker > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #33C3F0;
+}

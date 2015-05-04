@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>DtigerCSK</title>
+	<meta name="description" content="Motion graphics and stuff.">
+	<meta name="author" content="DtigerCSK">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="twelve column" style="margin-top: 25%; margin-bottom: 10%">
+			<div style="margin-bottom: 25%">
+				<h3>DtigerCSK</h3>
+				<p>I do motion graphics and stuff, mainly with Adobe After Effects.</p>
+				<p>If you're interested in a YouTube intro, fill out the form below!</p>
+				<a class="button button-primary" href="#work">My Work</a>  <a class="button button-primary" href="#contact">Contact Me</a>
+			</div>
+			<hr id="work">
+			<div>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWlrZ6i21lY3rUq1vaOeTNMdqyZXW1DiL" frameborder="0" allowfullscreen></iframe>
+			</div>
+	        <hr id="contact">
+	        <h3>Intro Request</h3>
+			<form>
+				<div class="row">
+					<div class="six columns">
+						<label for="YTChannel">Your Channel URL</label>
+						<input class="u-full-width" placeholder="YouTube.com/user/DtigerCSK" id="YTChannel" type="url">
+					</div>
+					<div class="six columns">
+						<label for="Subs">Number of Subscribers <small>(Does not have to be exact)</small></label>
+						<input class="u-full-width" placeholder="12345" id="Subs" type="text">
+					</div>
+				</div>
+				<div class="row">
+					<div class="six columns">
+						<label for="coms">Preferred Way of Communication</label>
+							<select id="coms" class="u-full-width">
+								<option value="Option 1">YouTube PM</option>
+								<option value="Option 2">Steam</option>
+							</select>
+					</div>
+					<div class="six columns">
+						<label for="comlink">Steam URL <small>(Only if you want to be contacted through Steam)</small></label>
+						<input class="u-full-width" placeholder="steamcommunity.com/profiles/76561198042187070" id="comlink" type="url">
+					</div>
+				</div>
+					<label for="message">What do you want in the intro?</label>
+					<textarea class="u-full-width" placeholder="Text, colors, etc." id="message"></textarea>
+				<!--INTRO TYPE-->
+				<div class="row">
+					<label for="type">Type of Intro<br>
+						<!--Flat-->
+						<label class="picker five columns">
+							<input class="flat" type="radio" name="type" value="Flat">
+							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
+						</label>
+						<!--3D-->
+						<label class="picker five columns">
+							<input class="3d" type="radio" name="type" value="3D">
+							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
+						</label>
+						<!--3D-->
+						<label class="picker five columns">
+							<input class="3d" type="radio" name="type" value="3D">
+							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
+						</label>
+						<!--3Dmin-->
+						<label class="picker five columns">
+							<input class="3dmin" type="radio" name="type" value="3Dmin">
+							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
+						</label>
+					</label>
+				</div>
+				<!--INTRO TYPE END-->
+				<div class="twelve columns">
+					<hr>
+					<input class="button-primary twelve columns" value="Submit" type="submit">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
