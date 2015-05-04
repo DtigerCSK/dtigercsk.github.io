@@ -34,11 +34,7 @@
 			<hr id="contact"class="twelve column">
 	        
 	        <h3>Intro Request</h3>
-	        <?php
-	        include 'form.html'
-	        ?>
-	        <!--
-			<form>
+			<form action="https://formspree.io/keetycats@gmail.com" method="POST">
 				<div class="row">
 					<div class="six columns">
 						<label for="YTChannel">Your Channel URL</label>
@@ -54,48 +50,29 @@
 						<label for="coms">Preferred Way of Communication</label>
 							<select id="coms" class="u-full-width">
 								<option value="Option 1">YouTube PM</option>
-								<option value="Option 2">Steam</option>
+								<option value="Option 2">Email</option>
 							</select>
 					</div>
 					<div class="six columns">
-						<label for="comlink">Steam URL <small>(Only if you want to be contacted through Steam)</small></label>
-						<input class="u-full-width" placeholder="steamcommunity.com/profiles/76561198042187070" id="comlink" type="url">
+						<label for="comlink">Email <small>(Only if you want to be contacted through email)</small></label>
+						<input class="u-full-width" placeholder="your@email.com" id="comlink" type="email" name"_replyto">
 					</div>
 				</div>
 					<label for="message">What do you want in the intro?</label>
 					<textarea class="u-full-width" placeholder="Text, colors, etc." id="message"></textarea>
-				<!- -INTRO TYPE- ->
-				<div class="row">
-					<label for="type">Type of Intro<br>
-						<!- -Flat- ->
-						<label class="picker five columns">
-							<input class="flat" type="radio" name="type" value="Flat">
-							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
-						</label>
-						<!- -3D- ->
-						<label class="picker five columns">
-							<input class="3d" type="radio" name="type" value="3D">
-							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
-						</label>
-						<!- -3D- ->
-						<label class="picker five columns">
-							<input class="3d" type="radio" name="type" value="3D">
-							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
-						</label>
-						<!- -3Dmin- ->
-						<label class="picker five columns">
-							<input class="3dmin" type="radio" name="type" value="3Dmin">
-							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
-						</label>
-					</label>
-				</div>
-				<!- -INTRO TYPE END- ->
+				<!--INTRO TYPE END-->
 				<div class="twelve columns">
 					<hr>
-					<input class="button-primary twelve columns" value="Submit" type="submit">
+					<input class="button-primary twelve columns" value="Send" type="submit">
 				</div>
 			</form>
-			-->
+			<div>
+				<h3>Information</h3>
+				<ul>
+					<li>I will use songs from <a href="https://www.youtube.com/user/NoCopyrightSounds">NoCopyrightSounds</a>, unless a different song is specifically requested.  The songs are safe from copyright infringement, but you do need to credit the song creator.</li>
+					<li>Songs</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
