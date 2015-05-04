@@ -14,3 +14,7 @@ small {
 .picker > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:2px solid #33C3F0;
 }
+
+.req {
+	color: #e74c3c;
+}

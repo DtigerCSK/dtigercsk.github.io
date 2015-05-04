@@ -20,14 +20,24 @@
 				<h3>DtigerCSK</h3>
 				<p>I do motion graphics and stuff, mainly with Adobe After Effects.</p>
 				<p>If you're interested in a YouTube intro, fill out the form below!</p>
-				<a class="button button-primary" href="#work">My Work</a>  <a class="button button-primary" href="#contact">Contact Me</a>
+				<a class="button button-primary" href="#work">My Work</a>  <a class="button" href="#contact">Contact Me</a>
 			</div>
-			<hr id="work">
+			<hr id="work" class="twelve column">
 			<div>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLWlrZ6i21lY3rUq1vaOeTNMdqyZXW1DiL" frameborder="0" allowfullscreen></iframe>
+				<h3>My Work</h3>
+				<div class="twelve column">
+					<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+						<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="//www.youtube.com/embed/videoseries?list=PLWlrZ6i21lY3rUq1vaOeTNMdqyZXW1DiL&theme=light&autohide=1&rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
-	        <hr id="contact">
+			<hr id="contact"class="twelve column">
+	        
 	        <h3>Intro Request</h3>
+	        <?php
+	        include 'form.html'
+	        ?>
+	        <!--
 			<form>
 				<div class="row">
 					<div class="six columns">
@@ -54,37 +64,38 @@
 				</div>
 					<label for="message">What do you want in the intro?</label>
 					<textarea class="u-full-width" placeholder="Text, colors, etc." id="message"></textarea>
-				<!--INTRO TYPE-->
+				<!- -INTRO TYPE- ->
 				<div class="row">
 					<label for="type">Type of Intro<br>
-						<!--Flat-->
+						<!- -Flat- ->
 						<label class="picker five columns">
 							<input class="flat" type="radio" name="type" value="Flat">
 							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
 						</label>
-						<!--3D-->
+						<!- -3D- ->
 						<label class="picker five columns">
 							<input class="3d" type="radio" name="type" value="3D">
 							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
 						</label>
-						<!--3D-->
+						<!- -3D- ->
 						<label class="picker five columns">
 							<input class="3d" type="radio" name="type" value="3D">
 							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
 						</label>
-						<!--3Dmin-->
+						<!- -3Dmin- ->
 						<label class="picker five columns">
 							<input class="3dmin" type="radio" name="type" value="3Dmin">
 							<img class="u-max-full-width" src="http://i.imgur.com/tzvsjkr.jpg"><br>
 						</label>
 					</label>
 				</div>
-				<!--INTRO TYPE END-->
+				<!- -INTRO TYPE END- ->
 				<div class="twelve columns">
 					<hr>
 					<input class="button-primary twelve columns" value="Submit" type="submit">
 				</div>
 			</form>
+			-->
 		</div>
 	</div>
 </div>
