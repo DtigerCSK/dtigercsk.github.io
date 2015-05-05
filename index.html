@@ -52,17 +52,17 @@
 				<div class="row">
 					<div class="six columns">
 						<label for="YTChannel">Your Channel URL</label>
-						<input class="u-full-width" placeholder="YouTube.com/user/DtigerCSK" id="YTChannel" type="url">
+						<input class="u-full-width" placeholder="YouTube.com/user/DtigerCSK" id="YTChannel" type="url" name="Channel URL">
 					</div>
 					<div class="six columns">
 						<label for="Subs">Number of Subscribers <small>(Does not have to be exact)</small></label>
-						<input class="u-full-width" placeholder="12345" id="Subs" type="text">
+						<input class="u-full-width" placeholder="12345" id="Subs" type="text" name="Subscribers">
 					</div>
 				</div>
 				<div class="row">
 					<div class="six columns">
 						<label for="coms">Preferred Way of Communication</label>
-							<select id="coms" class="u-full-width">
+							<select id="coms" class="u-full-width" name="communication">
 								<option value="Option 1">YouTube Message</option>
 								<option value="Option 2">Email</option>
 							</select>
@@ -73,11 +73,11 @@
 					</div>
 				</div>
 					<label for="message">What do you want in the intro?</label>
-					<textarea class="u-full-width" placeholder="Text, colors, etc." id="message"></textarea>
+					<textarea class="u-full-width" placeholder="Text, colors, etc." id="message" name="message"></textarea>
 				<div class="twelve columns">
 					<input class="button-primary twelve columns" value="Send" type="submit">
 				</div>
-				<input type="hidden" name="_next" value="/thanks.html"/>
+				<input type="hidden" name="_next" value="./thanks.html"/>
 				<input type="hidden" name="_subject" value="YouTube Intro"/>
 				<input type="text" name="_gotcha" style="display:none" />
 			</form>
