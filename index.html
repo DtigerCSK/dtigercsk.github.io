@@ -10,39 +10,44 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 </head>
 <body>
+<div id="bg"></div>
 <div class="container">
 	<div class="row">
 		<div class="twelve column" style="margin-top: 25%; margin-bottom: 10%">
 			<div style="margin-bottom: 25%">
 				<h3>DtigerCSK</h3>
-				<p>I do motion graphics and stuff, mainly with Adobe After Effects.</p>
-				<p>If you're interested in a YouTube intro, fill out the form below!</p>
+				<h5>I do motion graphics and stuff.</h5>
 				<a class="button button-primary" href="#work">My Work</a>  <a class="button" href="#contact">Contact Me</a>
-			</div>
-			<hr id="work" class="twelve column">
-			<div>
-				<h3>My Work</h3>
-				<div class="twelve column">
-					<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
-						<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="//www.youtube.com/embed/videoseries?list=PLWlrZ6i21lY3rUq1vaOeTNMdqyZXW1DiL&theme=light&autohide=1&rel=0" frameborder="0" allowfullscreen></iframe>
-					</div>
+				<div>
+					<a href="http://steamcommunity.com/profiles/76561198042187070"><i class="fa fa-steam-square fa-3x"></i></a>
+
+					<a href="https://youtube.com/c/DtigerCSK"><i class="fa fa-youtube-square fa-3x"></i></a>
 				</div>
 			</div>
-			<hr class="twelve column">
+			<hr id="work" class="line">
+			<div>
+				<h3>My Work</h3>
+				<div style='position: relative; width: 100%; height: 0px; padding-bottom: 60%;'>
+					<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="https://www.youtube.com/embed/videoseries?list=PLWlrZ6i21lY3rUq1vaOeTNMdqyZXW1DiL&theme=light&autohide=1&rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			<hr class="line">
 	        <div>
 				<h3>Information & Pricing</h3>
 				<ul>
 					<li>I will use songs from <a href="https://www.youtube.com/user/NoCopyrightSounds">NoCopyrightSounds</a>, unless a different song is specifically requested.  The songs are safe from copyright infringement, but you do need to credit the song creator.</li>
 					<li>Intros are $10 <small>(via PayPal)</small> <b>or</b> 5 CS:GO keys.</li>
 					<li>I sometimes do free intros, however it will be based on how active and/or how big your channel is.</li>
-					<li>Don't want to pay and have a small channel?  Templates are avalible to download <a href="./templates.html">here</a>.  If you do not have After Effects, I can edit it for you if I have time.</li>
+					<li>Don't want to pay and have a small channel?  Templates are avalible <a href="https://www.youtube.com/playlist?list=PLWlrZ6i21lY1MKxiBPERf4Jgs-c5HVDdu">here</a>.</li>
 				</ul>
 			</div>
-			<hr id="contact"class="twelve column">
+			<hr id="contact" class="line">
 	        <h3>Intro Request</h3>
+	        <p>Interested in an intro?  Fill out the form below or <a href="https://www.youtube.com/c/DtigerCSK/about">message me on YouTube</a>.</p>
 			<form action="https://formspree.io/keetycats@gmail.com" method="POST">
 				<div class="row">
 					<div class="six columns">
@@ -76,9 +81,12 @@
 				<input type="hidden" name="_subject" value="YouTube Intro"/>
 				<input type="text" name="_gotcha" style="display:none" />
 			</form>
-			<hr class="twelve column">
 		</div>
 	</div>
 </div>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$("#bg").bind("load", function () { $(this).fadeIn(); });
+</script>
 </body>
 </html>
