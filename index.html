@@ -15,6 +15,9 @@
 </head>
 <body>
 <div id="bg"></div>
+<div id="loading">
+	<i class="fa fa-circle-o-notch fa-spin load fa-3x"></i>
+</div>
 <div class="container">
 	<div class="row">
 		<div class="twelve column" style="margin-top: 25%; margin-bottom: 10%">
@@ -46,12 +49,27 @@
 				</ul>
 			</div>
 			<hr id="contact" class="line">
-	        <h3>Intro Requests</h3>
-	        <p>Interested in an intro?</p>
-	        <a class="button button-primary" href="https://www.youtube.com/c/DtigerCSK/about">Message me on YouTube</a>
-	        <p>Include what you want in the intro such as text, colors, songs, 2D/3D, etc.</p>
+	        <h3>Contact</h3>
+	        <p>Interested in an intro or just want to say hello? <b><a href="https://www.youtube.com/c/DtigerCSK/about">Message me on YouTube</a></b> or fill in the form below!<br>Include what you want in the intro such as text, colors, songs, 2D/3D, etc.</p>
+	         <form action="https://formspree.io/keetycats@gmail.com" method="POST">
+	         	<input class="one-half column" type="text" name="name" placeholder="Username" required>
+				<input class="one-half column" type="email" name="_replyto" placeholder="Your Email (Optional)">
+				<input type="text" name="channel" placeholder="Your Channel URL">
+				<textarea placeholder="Message" name="message" required></textarea>
+				<input type="hidden" name="_next" value="./thanks.html" />
+				<input type="text" name="_gotcha" style="display:none" />
+				<input class="button button-primary" type="submit" value="Send">
+			</form>
+
 		</div>
 	</div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!--Loading-->
+<script>
+$(window).load(function(){
+    $('#loading').fadeOut();
+});
+</script>
 </body>
 </html>
