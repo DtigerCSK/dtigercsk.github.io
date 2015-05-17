@@ -78,3 +78,81 @@ form {
 	background-color:rgba(256, 256, 256, 0.05);
 	padding: 10px 10px 10px 10px;
 }
+
+img,video {
+	width: 100%;
+}
+
+.back {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+
+
+
+.top {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+}
+
+.top:active,.top:focus {
+	color: #fff;
+}
+
+
+
+/*menu bar*/
+.mbutton {
+	display: inline-block;
+}
+
+.mbutton {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 10px;
+	height: 30px;
+}
+
+.menu {
+	width: 100%;
+	position: fixed;
+	z-index: 9001;
+	background-color: rgba(24,24,24, 0.8);
+	height: 50px;
+}
+
+.menucontent {
+	max-width: 860px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: -50px;
+	visibility: hidden;
+}
+
+.csk {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.active {
+	color: #1EAEDB;
+}
+
+.gfyVid {
+	width: 100%;
+}
+
+.gfywrap > div {
+	width: 45% !important;
+	float: left;
+	margin-left: 2.5%;
+}
