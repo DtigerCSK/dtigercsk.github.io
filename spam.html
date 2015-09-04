@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>spam lol</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.3.js"></script>
+</head>
+<body>
+<h5>Requests</h5>
+<p id="requests"></p>
+<p id="status"></p>
+<script type="text/javascript">
+var total = 0;
+setInterval(
+	function ()
+	{
+	    //code goes here that will be run every 5 seconds.   
+	    $.get('https://docs.google.com/forms/d/1sarqdXzhCZ_utKhf87rsVY6IvdYlepmhkyJYTN4FHYw/formResponse?entry.872079298=yeah&entry.528399529=curltest&submit=Submit',function(data,status) {
+	    },'html');
+	    total++;
+	    $('#requsts').html(total);
+	    $('#status').append("Done<br>")
+}, 5000);
+</script>
+</body>
+</html>
